@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* // Fonction de recherche principale
+// Fonction de recherche principale
 function rechercheGlobale(requete) {
     // Convertir la requête en minuscules
     const requeteMinuscule = requete.toLowerCase().trim();
@@ -487,72 +487,6 @@ function rechercheGlobale(requete) {
         return contientIngredients && contientAppareil && contientUstensiles;
     });
 
-    afficherRecettes(recettesFiltrees);
-    afficherNombreRecettes(recettesFiltrees);
-} */
-
-// Fonction de recherche principale
-function rechercheGlobale(requete) {
-    // Convertir la requête en minuscules et retirer les espaces inutiles aux extrémités
-    const requeteMinuscule = requete.toLowerCase().trim();
-
-    // Tableau pour stocker les recettes filtrées
-    const recettesFiltrees = [];
-
-    // Boucle sur chaque recette
-    for (let recetteIndex = 0; recetteIndex < recettes.length; recetteIndex++) {
-        const recette = recettes[recetteIndex];
-
-        // Vérifier si la recette correspond à la requête dans le titre, la description, les ingrédients, l'appareil ou les ustensiles
-        const correspondTitre = recette.name.toLowerCase().includes(requeteMinuscule);
-        const correspondDescription = recette.description.toLowerCase().includes(requeteMinuscule);
-        const correspondIngredients = recette.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(requeteMinuscule));
-        const correspondAppareil = recette.appliance.toLowerCase().includes(requeteMinuscule);
-        const correspondUstensiles = recette.ustensils.some(ustensile => ustensile.toLowerCase().includes(requeteMinuscule));
-
-        // Si la recette correspond à la requête
-        if (correspondTitre || correspondDescription || correspondIngredients || correspondAppareil || correspondUstensiles) {
-            // Vérifier les critères de sélection supplémentaires
-            let tousIngredientsCorrespondent = true;
-            let tousAppareilsCorrespondent = true;
-            let tousUstensilesCorrespondent = true;
-
-            // Filtrer en fonction des ingrédients sélectionnés
-            for (let ingredients = 0; ingredients < ingredientsSelectionnes.length; ingredients++) {
-                const ingredientSelectionne = ingredientsSelectionnes[ingredients].toLowerCase();
-                const ingredientPresent = recette.ingredients.some(item => item.ingredient.toLowerCase() === ingredientSelectionne);
-                if (!ingredientPresent) {
-                    tousIngredientsCorrespondent = false;
-                    break;
-                }
-            }
-
-            // Filtrer en fonction des appareils sélectionnés
-            for (let appareils = 0; appareils < appareilSelectionnes.length; appareils++) {
-                const appareilSelectionne = appareilSelectionnes[appareils].toLowerCase();
-                if (!recette.appliance.toLowerCase().includes(appareilSelectionne)) {
-                    tousAppareilsCorrespondent = false;
-                    break;
-                }
-            }
-
-            // Filtrer en fonction des ustensiles sélectionnés
-            for (let ustensiles = 0; ustensiles < ustensileSelectionnes.length; ustensiles++) {
-                const ustensileSelectionne = ustensileSelectionnes[ustensiles].toLowerCase();
-                if (!recette.ustensils.includes(ustensileSelectionne)) {
-                    tousUstensilesCorrespondent = false;
-                    break;
-                }
-            }
-
-            // Ajouter la recette aux résultats filtrés si elle satisfait tous les critères
-            if (tousIngredientsCorrespondent && tousAppareilsCorrespondent && tousUstensilesCorrespondent) {
-                recettesFiltrees.push(recette);
-            }
-        }
-    }
-
-    // Afficher les résultats
     afficherRecettes(recettesFiltrees);
     afficherNombreRecettes(recettesFiltrees);
 }
