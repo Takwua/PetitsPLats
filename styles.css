@@ -1,0 +1,393 @@
+/* Boîte modèle et réinitialisation des marges */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Réinitialisation des marges pour tous les éléments */
+* {
+    margin: 0;
+}
+
+/* Style du corps */
+body {
+    font-family: sans-serif;
+    font-size: 16px; /* Taille de police de base */
+    line-height: 1.5;
+}
+
+/* Conteneur pour le contenu du corps */
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #EDEDED;
+}
+
+/* Style de l'image de fond */
+.background-img {
+    position: absolute;
+    min-height: 377px;
+    object-fit: cover;
+}
+
+/* Style de l'image de logo */
+.logo-img {
+    position: relative;
+    top: 20px;
+    left: 4.8%;
+    width: calc(min(100vw, 207px));
+    height: calc(min(100vh, 25.261px));
+}
+
+/* Style du titre principal */
+.titre-principal {
+    position: relative;
+    color: #FFD15B;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-size: clamp(1.7rem, 5vw, 44px); /* Taille de police responsive */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Style du conteneur de champ de recherche */
+.champ-de-recherche {
+    border-radius: 11px;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Largeur du conteneur de recherche */
+.conteneur-de-recherche {
+    width: 66.25%;
+}
+
+/* Mise en page du contenu de l'en-tête */
+.header-contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding-top: clamp(65px, calc(18vw - 65px), 227px); /* Padding responsive */
+}
+
+/* Style de l'icône de recherche */
+.icone-de-recherche {
+    width: 51px;
+    height: 52px;
+    flex-shrink: 0;
+    background: #1B1B1B;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    right: 10px;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+/* Style de l'icône de fermeture de recherche */
+#fermer-la-recherche {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 85px;
+    top: 30px;
+    display: none;
+}
+
+/* Style du champ de saisie de recherche */
+.champ-de-recherche input {
+    color: #7A7A7A;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(0.9rem, 1vw, 16px); /* Taille de police responsive */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: clamp(52px, 8vw, 72px); /* Hauteur responsive */
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+/* Style spécifique du champ de saisie de texte de recherche */
+.champ-de-recherche input[type="text"] {
+    padding-left: clamp(7px, calc(2vw + 6px), 35px);
+    border: none;
+    outline: none;
+}
+
+/* Style du contenu du menu déroulant */
+.contenu-menu-deroulant {
+    padding-top: 190px;
+    padding-left: clamp(7px, calc(3.5vw + 2px), 102px);
+}
+
+/* Style du conteneur des éléments du menu déroulant */
+.menu-deroulant {
+    display: flex;
+    column-gap: clamp(15px, 4.5vw + 5px, 65px);
+}
+
+/* Style individuel des éléments du menu déroulant */
+.menu-deroulant1,
+.menu-deroulant2,
+.menu-deroulant3 {
+    width: 195px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #FFF;
+    z-index: 10;
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    height: 56px;
+    overflow-y: hidden;
+    transition: height 0.1s linear;
+    position: relative;
+}
+
+/* Style de la partie visible des éléments du menu déroulant */
+.md1-partie-visible,
+.md2-partie-visible,
+.md3-partie-visible {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px;
+    align-items: center;
+    gap: 63px;
+    border-radius: 11px;
+    background: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Style du titre à l'intérieur des éléments du menu déroulant */
+.md1-partie-visible h1,
+.md2-partie-visible h1,
+.md3-partie-visible h1 {
+    color: #1B1B1B;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px; /* Taille de police du titre */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #FFF;
+}
+
+
+#cards-container {
+    padding: 22px 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 14px 15px; 
+    background: #EDEDED;
+}
+
+.card img {
+    object-fit: cover;
+    height: 253px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card {
+    border-radius: 21px;
+    background: #FFF;
+    box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+
+.recipe-time { 
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 14px;
+    background: #FFD15B;
+    position: absolute;
+    top: 21px;
+    right: 22px; 
+}
+
+.card-body {
+    width: 100%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    height: 478px;
+    min-height: 478px;
+}
+
+.card-body h2 {
+    padding-top: 21px;
+    padding-bottom: 29px;
+    color: #000;
+    font-family: "Anton", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.card-body h3 {
+    color: #7A7A7A;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card-description {
+    color: #1B1B1B;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    max-height: 76px;
+}
+
+.ingredient-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+    padding-bottom: 61px;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.ingredient-list li {
+    white-space: pre-wrap; 
+}
+
+.menu-deroulant1.open, .menu-deroulant2.open, .menu-deroulant3.open {
+height: 315px;
+overflow-y: auto;
+z-index: 10;
+background: #FFF;
+position: relative;
+}
+
+
+.conteneur-de-saisie-md1, .conteneur-de-saisie-md2, .conteneur-de-saisie-md3{
+    position: relative;
+    width: 163px;
+    height: 36px;
+    border-radius: 2px;
+    border: 1px solid #C6C6C6;
+    margin-left: 16px;
+    margin-bottom: 11px;
+    background: #FFF;
+
+}
+
+.md1-input, .md2-input, .md3-input{
+border: none;
+outline: none;
+width: 120px;
+height: 34px;
+color: #7A7A7A;
+font-family: "Manrope", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 8px;
+background: #FFF;
+}
+
+.glass-icon {
+    width: 13.5px;
+    height: 14px;
+    transform: translateX(15px);
+}
+
+
+.md1-list p:hover, .md2-list p:hover, .md3-list p:hover {
+    background: #FFD15B; /* Style au survol */
+}
+
+/* Style pour les éléments sélectionnés dans le menu déroulant */
+.ingredient-selectionne, .appareil-selectionne, .ustensile-selectionne {
+    color: #1B1B1B;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+    background: #FFD15B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
+.item-selectionne {
+    display: inline-flex;
+    padding: 17px 18px;
+    align-items: center;
+    gap: 60px;
+    border-radius: 10px;
+    background: #FFD15B;
+    color: #000;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 53px;
+    margin-left: 10px;
+}
+
+#number-recipes{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+}
+
+/* Styles pour le bouton de fermeture */
+.item-selectionne button {
+    background-color: transparent;
+    border: none;
+    color: transparent; /* Rendre le texte transparent */
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 20px; /* Largeur du bouton */
+    height: 20px; /* Hauteur du bouton */
+    padding: 0;
+}
+
+/* Style pour le SVG de la croix */
+.item-selectionne button::before {
+    content: ''; /* Contenu vide pour le pseudo-élément */
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

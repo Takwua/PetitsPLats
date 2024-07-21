@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Méta-informations -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les Petits Plats - Trouvez vos recettes de cuisine">
+    <!-- Titre de la page -->
+    <title>Les Petits Plats</title>
+    <!-- Feuilles de style -->
+    <link href="./styles.css" rel="stylesheet" type="text/css" /> <!-- Importation de la feuille de style -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> <!-- Importation de la police Google Anton -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"> <!-- Importation de la police Google Manrope -->
+    <script src="./recipes.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <div class="contenu-header">
+            <img class="background-img" src="./images/Background.png" alt="Image de fond" height="667" width="1440"> <!-- Image de fond -->
+            <img class="logo-img" src="./images/Logo.png" alt="Logo Les Petits Plats" height="40" width="328"> <!-- Logo -->
+            <div class="header-contenu">
+                <div class="titre-principal">CHERCHEZ PARMI PLUS DE 1500 RECETTES<br> DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</div> <!-- Titre principal -->
+                <div class="conteneur-de-recherche">
+                    <div class="champ-de-recherche">
+                        <input id="zone-de-recherche" type="text" placeholder="Rechercher une recette, un ingrédient, ..."> <!-- Zone de recherche -->
+                        <svg id="fermer-la-recherche" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M15 15L8.5 8.5M8.5 8.5L2 2M8.5 8.5L15 2M8.5 8.5L2 15" stroke="#7A7A7A" stroke-width="2.16667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> <!-- Icône pour fermer la recherche -->
+                        <div class="icone-de-recherche">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                                <circle cx="10" cy="10.4219" r="9.5" stroke="white" />
+                                <line x1="18.3536" y1="19.0683" x2="27.3536" y2="28.0683" stroke="white" />
+                            </svg> <!-- Icône de recherche -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Section du menu déroulant -->
+    <section class="contenu-menu-deroulant">
+        <div class="menu-deroulant">
+            <!-- Menu déroulant 1 -->
+            <div class="menu-deroulant1">
+                <div class="md1-partie-visible">
+                    <h1>Ingrédients</h1> <!-- Titre de la partie visible -->
+                    <svg id="fleche-menu-deroulant1" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                        <path d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round" />
+                    </svg> <!-- Flèche du menu déroulant -->
+                </div>
+                <div class="conteneur-de-saisie-md1">
+                    <input type="text" class="md1-input" tabindex="-1" id="md1-input"> <!-- Champ de saisie pour le menu déroulant 1 -->
+                    <svg class="glass-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <circle cx="5" cy="5" r="4.75" stroke="#7A7A7A" stroke-width="0.5" />
+                        <line x1="9.17678" y1="9.32322" x2="13.6768" y2="13.8232" stroke="#7A7A7A" stroke-width="0.5" />
+                    </svg> <!-- Icône de recherche associée au champ de saisie -->
+                </div>
+                <div class="md1-list" id="md1-list">
+                    <!-- Liste des éléments -->
+                </div>
+            </div>
+
+            <!-- Menu déroulant 2 -->
+            <div class="menu-deroulant2">
+                <div class="md2-partie-visible">
+                    <h1>Appareils</h1> <!-- Titre de la partie visible -->
+                    <svg id="fleche-menu-deroulant2" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                        <path d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round" />
+                    </svg> <!-- Flèche du menu déroulant -->
+                </div>
+                <div class="conteneur-de-saisie-md2">
+                    <input type="text" class="md2-input" tabindex="-1" id="md2-input"> <!-- Champ de saisie pour le menu déroulant 2 -->
+                    <svg class="glass-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <circle cx="5" cy="5" r="4.75" stroke="#7A7A7A" stroke-width="0.5" />
+                        <line x1="9.17678" y1="9.32322" x2="13.6768" y2="13.8232" stroke="#7A7A7A" stroke-width="0.5" />
+                    </svg> <!-- Icône de recherche associée au champ de saisie -->
+                </div>
+                <div class="md2-list" id="md2-list">
+                    <!-- Liste des éléments  -->
+                </div>
+            </div>
+
+            <!-- Menu déroulant 3 -->
+            <div class="menu-deroulant3">
+                <div class="md3-partie-visible">
+                    <h1>Ustensiles</h1> <!-- Titre de la partie visible -->
+                    <svg id="fleche-menu-deroulant3" xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                        <path d="M1 1L7.5 7L14 1" stroke="#1B1B1B" stroke-linecap="round" />
+                    </svg> <!-- Flèche du menu déroulant -->
+                </div>
+                <div class="conteneur-de-saisie-md3">
+                    <input type="text" class="md3-input" tabindex="-1" id="md3-input"> <!-- Champ de saisie pour le menu déroulant 3 -->
+                    <svg class="glass-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <circle cx="5" cy="5" r="4.75" stroke="#7A7A7A" stroke-width="0.5" />
+                        <line x1="9.17678" y1="9.32322" x2="13.6768" y2="13.8232" stroke="#7A7A7A" stroke-width="0.5" />
+                    </svg> <!-- Icône de recherche associée au champ de saisie -->
+                </div>
+                <div class="md3-list" id="md3-list">
+                    <!-- Liste des éléments -->
+                </div>
+            </div>
+        </div>
+        <p id="number-recipes">Aucune recette</p> <!-- Nombre de recettes -->
+    </section>
+
+    <section class="filtres-selectionnes">
+        <div id="selectedContainer">
+            <!-- Les éléments sélectionnés seront ajoutés ici dynamiquement -->
+        </div>
+    </section>
+
+    <section class="contenu-card">
+        <div id="cards-container">
+            <!-- Section pour afficher les cartes de recettes -->
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
