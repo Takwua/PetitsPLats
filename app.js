@@ -495,8 +495,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const zoneDeRecherche = document.getElementById('zone-de-recherche');
 
     zoneDeRecherche.addEventListener('input', function () {
-        // Convertir la valeur de la zone de recherche en minuscules et mettre à jour la valeur de la zone
-        const requeteMinuscule = this.value.toLowerCase().trim();
+        // Convertir la valeur de la zone de recherche en minuscules pour la recherche
+        const requeteMinuscule = this.value.toLowerCase(); // Conserver les espaces mais convertir en minuscules
+
+        // Mettre à jour la valeur de la zone de recherche avec la chaîne convertie en minuscules
         this.value = requeteMinuscule;
 
         // Appeler la fonction de recherche avec la requête convertie en minuscules
