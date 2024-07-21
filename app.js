@@ -455,7 +455,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 // Fonction de recherche principale
 function rechercheGlobale(requete) {
     // Convertir la requête en minuscules et retirer les espaces inutiles aux extrémités
