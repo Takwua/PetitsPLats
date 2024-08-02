@@ -72,7 +72,7 @@
         <mxCell id="V1tdQmB5dovIDtoan9na-49" value="Recette mis à jour" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="600" y="595" width="210" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-51" value="Non" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-51" value="Ne contient pas de filtres" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="161" y="830" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.646;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="V1tdQmB5dovIDtoan9na-51" target="V1tdQmB5dovIDtoan9na-49" edge="1">
