@@ -30,7 +30,7 @@
         <mxCell id="V1tdQmB5dovIDtoan9na-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-1" target="V1tdQmB5dovIDtoan9na-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-1" value="valeur &amp;gt;= 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-1" value="Valeur &amp;gt;= 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="150" y="306" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-40" value="Oui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-8" edge="1">
@@ -48,7 +48,7 @@
         <mxCell id="-Y4pLnlHrgumTn3dGfFy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-6" target="V1tdQmB5dovIDtoan9na-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="verifie si la valeur inclue filtre sur&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="Verifie si la valeur inclue&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="70" y="630" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-8" value="Toutes les recettes sont actives" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
@@ -78,26 +78,8 @@
         <mxCell id="V1tdQmB5dovIDtoan9na-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.646;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="V1tdQmB5dovIDtoan9na-51" target="V1tdQmB5dovIDtoan9na-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-3" value="Ingredients" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="-Y4pLnlHrgumTn3dGfFy-3" value="Filtres" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="320" y="670" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="190" y="720" as="sourcePoint" />
-            <mxPoint x="600" y="720" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="190" y="644.5" as="sourcePoint" />
-            <mxPoint x="600" y="644.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-4" value="Appareils" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="320" y="710" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-1" value="Ustensils" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="320" y="630" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
