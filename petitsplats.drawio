@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0.0" version="24.7.6">
   <diagram name="Page-1" id="_CkIk55Bxlhfrq4PTV1R">
-    <mxGraphModel dx="1192" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1192" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,34 +30,38 @@
         <mxCell id="V1tdQmB5dovIDtoan9na-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-1" target="V1tdQmB5dovIDtoan9na-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-1" value="Valeur &amp;gt;= 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-1" value="Si la Valeur est &amp;gt;= 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="150" y="306" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-40" value="Oui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-8" edge="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-40" value="Non" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.218;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="161" y="553" as="sourcePoint" />
+            <mxPoint x="371" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="372" y="433" />
+              <mxPoint x="372" y="632" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V1tdQmB5dovIDtoan9na-42" value="Oui" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-42" value="Non" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-4" value="Verfie la valeur du champ, si c&#39;est vide" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="70" y="396" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-6" target="V1tdQmB5dovIDtoan9na-51" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="V1tdQmB5dovIDtoan9na-4" value="Vérifier&amp;nbsp; si un filtre est sélectionné" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="70" y="396" width="120" height="74" as="geometry" />
         </mxCell>
         <mxCell id="-Y4pLnlHrgumTn3dGfFy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-6" target="V1tdQmB5dovIDtoan9na-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="Verifie si la valeur inclue&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="Tri les recettes en fonctions des filtres sélectionnés" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="70" y="630" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-8" value="Toutes les recettes sont actives" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="400" y="480" width="120" height="100" as="geometry" />
+        <mxCell id="V1tdQmB5dovIDtoan9na-8" value="Afficher toutes les recettes disponibles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="630" y="370" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PS8EHh33wONcYnEYTsD2-8" target="V1tdQmB5dovIDtoan9na-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PS8EHh33wONcYnEYTsD2-8" value="0 &amp;gt; valeur = 2&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="PS8EHh33wONcYnEYTsD2-8" value="Si la Valeur est 0 &amp;gt; valeur = 2&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="340" y="306" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-37" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
@@ -69,17 +73,8 @@
         <mxCell id="V1tdQmB5dovIDtoan9na-36" value="Chargement de la page initial" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="280" y="30" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-49" value="Recette mis à jour" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-49" value="Affiche la liste des recettes mis à jour" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="600" y="595" width="210" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-51" value="Ne contient pas de filtres" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="161" y="830" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.646;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="V1tdQmB5dovIDtoan9na-51" target="V1tdQmB5dovIDtoan9na-49" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="-Y4pLnlHrgumTn3dGfFy-3" value="Filtres ( Ingrédients, Ustensils, Appareils)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="320" y="650" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
