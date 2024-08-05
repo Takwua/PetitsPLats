@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0.0" version="24.7.6">
   <diagram name="Page-1" id="_CkIk55Bxlhfrq4PTV1R">
-    <mxGraphModel dx="1192" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1192" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,19 +27,28 @@
             <mxPoint x="400" y="296" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-1" target="V1tdQmB5dovIDtoan9na-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="V1tdQmB5dovIDtoan9na-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hWoNNICqFyL3bPMAGpB6-2" target="V1tdQmB5dovIDtoan9na-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="408" />
+              <mxPoint x="120" y="408" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-1" value="Si la Valeur est &amp;gt;= 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="150" y="306" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-40" value="Non" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.218;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="V1tdQmB5dovIDtoan9na-4" target="V1tdQmB5dovIDtoan9na-49" edge="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-40" value="Non" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.218;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="161" y="553" as="sourcePoint" />
-            <mxPoint x="371" y="650" as="targetPoint" />
+            <mxPoint x="161.47" y="470" as="sourcePoint" />
+            <mxPoint x="638.53" y="665.56" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="372" y="433" />
-              <mxPoint x="372" y="632" />
+              <mxPoint x="221.47" y="470.5" />
+              <mxPoint x="221.47" y="501.5" />
+              <mxPoint x="414.47" y="501.5" />
+              <mxPoint x="414.47" y="571.5" />
+              <mxPoint x="522.47" y="571.5" />
+              <mxPoint x="522.47" y="665.5" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -47,12 +56,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-4" value="Vérifier&amp;nbsp; si un filtre est sélectionné" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="70" y="396" width="120" height="74" as="geometry" />
+          <mxGeometry x="80" y="470" width="120" height="74" as="geometry" />
         </mxCell>
         <mxCell id="-Y4pLnlHrgumTn3dGfFy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="V1tdQmB5dovIDtoan9na-6" target="V1tdQmB5dovIDtoan9na-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="Tri les recettes en fonctions des filtres sélectionnés" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="V1tdQmB5dovIDtoan9na-6" value="Filtre les recettes déjà trier par la recherche en fonction des filtres actifs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="70" y="630" width="120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-8" value="Afficher toutes les recettes disponibles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
@@ -75,6 +84,16 @@
         </mxCell>
         <mxCell id="V1tdQmB5dovIDtoan9na-49" value="Affiche la liste des recettes mis à jour" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="600" y="595" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="hWoNNICqFyL3bPMAGpB6-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="V1tdQmB5dovIDtoan9na-1" target="hWoNNICqFyL3bPMAGpB6-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="346" as="sourcePoint" />
+            <mxPoint x="120" y="470" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hWoNNICqFyL3bPMAGpB6-2" value="Filtre selon la recherche de l&#39;utilisateur ( titre, descriptions)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="140" y="380" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
