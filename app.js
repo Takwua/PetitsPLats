@@ -460,6 +460,14 @@ function rechercheGlobale(requete) {
     // Convertir la requête en minuscules
     const requeteMinuscule = requete.toLowerCase().trim();
 
+    // Vérifier si la requête contient au moins 3 caractères
+    if (requeteMinuscule.length < 3) {
+        // Si la requête est trop courte, afficher toutes les recettes
+        afficherRecettes(recettes);
+        afficherNombreRecettes(recettes);
+        return;
+    }
+
     // Filtrer les recettes en fonction du titre, de la description, des ingrédients, de l'appareil ou des ustensiles
     const recettesFiltrees = recettes.filter(recette => {
         const contientDansTitre = recette.name.toLowerCase().includes(requeteMinuscule);
@@ -490,6 +498,7 @@ function rechercheGlobale(requete) {
     afficherRecettes(recettesFiltrees);
     afficherNombreRecettes(recettesFiltrees);
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
