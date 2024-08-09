@@ -460,6 +460,14 @@ function rechercheGlobale(requete) {
     // Convertir la requête en minuscules et retirer les espaces inutiles aux extrémités
     const requeteMinuscule = requete.toLowerCase().trim();
 
+    // Vérifier si la requête contient au moins 3 caractères
+    if (requeteMinuscule.length < 3) {
+        // Si la requête est trop courte, afficher toutes les recettes
+        afficherRecettes(recettes);
+        afficherNombreRecettes(recettes);
+        return;
+    }
+
     // Tableau pour stocker les recettes filtrées
     const recettesFiltrees = [];
 
@@ -520,6 +528,7 @@ function rechercheGlobale(requete) {
     afficherRecettes(recettesFiltrees);
     afficherNombreRecettes(recettesFiltrees);
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
