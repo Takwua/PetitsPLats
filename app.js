@@ -383,8 +383,8 @@ function deselectUstensile(ustensile) {
 
 // Écouteur d'événement pour exécuter le code lorsque le document est entièrement chargé
 document.addEventListener('DOMContentLoaded', () => {
-    const conteneurCartes = document.getElementById('cards-container');
-    const nombreRecettesElement = document.getElementById('number-recipes');
+    // const conteneurCartes = document.getElementById('cards-container');
+    // const nombreRecettesElement = document.getElementById('number-recipes');
 
     // Afficher le nombre initial de recettes
     afficherNombreRecettes(recettes);
